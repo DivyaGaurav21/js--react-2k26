@@ -1,0 +1,140 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Learn JavaScript",
+      "body": "JavaScript is a powerful language for web development.",
+      "author": "Divya"
+    },
+    {
+      "id": 2,
+      "title": "React Basics",
+      "body": "React helps in building fast and interactive UI.",
+      "author": "Aman"
+    },
+    {
+      "id": 3,
+      "title": "Frontend Interview Tips",
+      "body": "Practice JavaScript fundamentals and React concepts.",
+      "author": "Rohit"
+    },
+    {
+      "id": 4,
+      "title": "Async JavaScript",
+      "body": "Promises and async/await make async code readable.",
+      "author": "Neha"
+    },
+    {
+      "id": 5,
+      "title": "CSS with Tailwind",
+      "body": "Tailwind CSS speeds up UI development.",
+      "author": "Kiran"
+    }
+  ],
+  "fruits": [
+        {
+            "id": "1",
+            "name": "Apple"
+        },
+        {
+            "id": "2",
+            "name": "Banana"
+        },
+        {
+            "id": "3",
+            "name": "Orange"
+        },
+        {
+            "id": "4",
+            "name": "Strawberry"
+        },
+        {
+            "id": "5",
+            "name": "Mango"
+        },
+        {
+            "id": "6",
+            "name": "Pineapple"
+        },
+        {
+            "id": "7",
+            "name": "Grapes"
+        },
+        {
+            "id": "8",
+            "name": "Watermelon"
+        },
+        {
+            "id": "9",
+            "name": "Blueberry"
+        },
+        {
+            "id": "10",
+            "name": "Cherry"
+        },
+        {
+            "id": "11",
+            "name": "Peach"
+        },
+        {
+            "id": "12",
+            "name": "Plum"
+        },
+        {
+            "id": "13",
+            "name": "Kiwi"
+        },
+        {
+            "id": "14",
+            "name": "Papaya"
+        },
+        {
+            "id": "15",
+            "name": "Pomegranate"
+        },
+        {
+            "id": "16",
+            "name": "Lemon"
+        },
+        {
+            "id": "17",
+            "name": "Coconut"
+        },
+        {
+            "id": "18",
+            "name": "Pear"
+        },
+        {
+            "id": "19",
+            "name": "Guava"
+        },
+        {
+            "id": "20",
+            "name": "Lychee"
+        },
+          {
+            "id": "21",
+            "name": "mango 2 "
+        },
+        {
+            "id": "22",
+            "name": "Lemon 212"
+        },
+        {
+            "id": "23",
+            "name": "Coconut 12324"
+        },
+        {
+            "id": "24",
+            "name": "Pear 234"
+        },
+        {
+            "id": "25",
+            "name": "Guava se2"
+        },
+        {
+            "id": "26",
+            "name": "Lychee q3546"
+        }
+    ]
+}

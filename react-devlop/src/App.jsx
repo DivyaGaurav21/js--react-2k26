@@ -1,12 +1,92 @@
 import './App.css'
-import FormValidation from './components/question/FormValidation'
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
+
+import Post from './components/tanstack/Post';
+import Home from './components/tanstack/Home';
+import Tech from './components/tanstack/Tech';
+import RQPostDetails from './components/tanstack/RQPostDetails';
+import PaginatedQuery from './components/tanstack/PaginatedQuery';
+import InfiniteQuery from './components/tanstack/InfiniteQuery';
+import Iq2 from './components/tanstack/Iq2';
+
+const Navbar = () => {
+  return (
+    <nav className="bg-gray-900 px-6 py-4">
+      <ul className="flex gap-6 text-white">
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-semibold" : "hover:text-yellow-300"
+            }
+          >
+            Home
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/post"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-semibold" : "hover:text-yellow-300"
+            }
+          >
+            Post
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/tech"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-semibold" : "hover:text-yellow-300"
+            }
+          >
+            Tech
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/pagination"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-semibold" : "hover:text-yellow-300"
+            }
+          >
+            pagination
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/infinite-que1"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-semibold" : "hover:text-yellow-300"
+            }
+          >
+            Infinite Que1
+          </NavLink>
+        </li>
+
+      </ul>
+    </nav>
+  );
+};
 
 function App() {
-
   return (
-    <>
-      <FormValidation />
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/post" element={<Post />} />
+        <Route path="/post/:postId" element={<RQPostDetails />} />
+        <Route path="/tech" element={<Tech />} />
+        <Route path="/pagination" element={<PaginatedQuery />} />
+        {/* <Route path="/infinite-que1" element={<InfiniteQuery />} /> */}
+         <Route path="/infinite-que1" element={<Iq2 />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
