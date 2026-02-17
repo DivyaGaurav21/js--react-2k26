@@ -5,13 +5,14 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+.btn {
  background-color: black;
   color: white;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   border-radius: 0.5em;
+  margin: 3px;
 }
 
 input {
@@ -21,9 +22,6 @@ input {
   border-radius: 0.5em; 
 }
 
-button:hover {
-  border-color: #0914e3;
-}
 
 
 
