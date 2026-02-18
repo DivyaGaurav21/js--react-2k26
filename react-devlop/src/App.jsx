@@ -94,7 +94,8 @@
 
 
 import './App.css'
-import Tabs from './components/question/tabs/Tabs';
+import MultiStepForm from './components/question/MultiStepForm';
+// import Tabs from './components/question/tabs/Tabs';
 // import FullyControlledForm from './components/question/FullyControlledForm';
 // import TodoList from './components/question/TodoList';
 // import FormValidation from './components/question/FormValidation';
@@ -118,7 +119,8 @@ function App() {
       {/* <FormValidation/> */}
       {/* <TodoList/> */}
       {/* <FullyControlledForm/> */}
-      <Tabs/>
+      {/* <Tabs/> */}
+      <MultiStepForm/>
     </>
   )
 }
