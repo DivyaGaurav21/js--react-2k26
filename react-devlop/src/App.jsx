@@ -94,7 +94,8 @@
 
 
 import './App.css'
-import FullyControlledForm from './components/question/FullyControlledForm';
+import Tabs from './components/question/tabs/Tabs';
+// import FullyControlledForm from './components/question/FullyControlledForm';
 // import TodoList from './components/question/TodoList';
 // import FormValidation from './components/question/FormValidation';
 // import StarRating from './components/question/ StarRating';
@@ -116,7 +117,8 @@ function App() {
       {/* <RefHooks/> */}
       {/* <FormValidation/> */}
       {/* <TodoList/> */}
-      <FullyControlledForm/>
+      {/* <FullyControlledForm/> */}
+      <Tabs/>
     </>
   )
 }
