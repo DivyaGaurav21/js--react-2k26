@@ -166,7 +166,7 @@ const TodoList = () => {
                 onChange={() => checkHandler(todo.id)}
                 className="w-7 h-7 accent-black"
               />
-              <p>{todo.title}</p>
+              <p className={`text-2xl font-bold ${todo.status ? "line-through" : ""}`}>{todo.title}</p>
             </div>
             <div className="flex flex-row gap-1">
               <button className="btn" onClick={() => editTodoHandler(todo)}>Edit</button>
