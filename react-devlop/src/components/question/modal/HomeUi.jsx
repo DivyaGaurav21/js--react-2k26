@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Modal from "./Modal";
+import PortalModal from "./PortalModal";
 
 const HomeUi = () => {
     const [isOpen , setIsOpen] = useState(false);
@@ -10,11 +11,15 @@ const HomeUi = () => {
     <span>Suppose HomeUi Nav</span>
     {
         isOpen && (
-            <Modal
-               isOpen={isOpen}
+            // <Modal
+            //    isOpen={isOpen}
+            //    onClose={() => setIsOpen(false)}
+            // >modal Content
+            // </Modal>
+            <PortalModal
+                isOpen={isOpen}
                onClose={() => setIsOpen(false)}
-            >modal Content
-            </Modal>
+            />
         )
     }
     <button className="btn" onClick={() => setIsOpen(isOpen => !isOpen)}>register</button>

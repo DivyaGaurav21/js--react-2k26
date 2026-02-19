@@ -94,7 +94,9 @@
 
 
 import './App.css'
-import HomeUi from './components/question/modal/HomeUi';
+import EditableList from './components/question/EditableList';
+// import HomeUi from './components/question/modal/HomeUi';
+// import SearchFilter from './components/question/SearchFilter';
 // import MultiStepForm from './components/question/MultiStepForm';
 // import Tabs from './components/question/tabs/Tabs';
 // import FullyControlledForm from './components/question/FullyControlledForm';
@@ -122,7 +124,9 @@ function App() {
       {/* <FullyControlledForm/> */}
       {/* <Tabs/> */}
       {/* <MultiStepForm/> */}
-      <HomeUi/>
+      {/* <HomeUi/> */}
+      {/* <SearchFilter/> */}
+      <EditableList/>
     </>
   )
 }
