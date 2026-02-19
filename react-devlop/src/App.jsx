@@ -94,7 +94,9 @@
 
 
 import './App.css'
-import EditableList from './components/question/EditableList';
+import Accordion from './components/question/Accordion';
+import FileUpload from './components/question/FileUpload';
+// import EditableList from './components/question/EditableList';
 // import HomeUi from './components/question/modal/HomeUi';
 // import SearchFilter from './components/question/SearchFilter';
 // import MultiStepForm from './components/question/MultiStepForm';
@@ -126,7 +128,9 @@ function App() {
       {/* <MultiStepForm/> */}
       {/* <HomeUi/> */}
       {/* <SearchFilter/> */}
-      <EditableList/>
+      {/* <EditableList/> */}
+      <FileUpload/>
+      <Accordion/>
     </>
   )
 }
