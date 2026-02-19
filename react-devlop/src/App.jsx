@@ -95,7 +95,7 @@
 
 import './App.css'
 import Accordion from './components/question/Accordion';
-import FileUpload from './components/question/FileUpload';
+// import FileUpload from './components/question/FileUpload';
 // import EditableList from './components/question/EditableList';
 // import HomeUi from './components/question/modal/HomeUi';
 // import SearchFilter from './components/question/SearchFilter';
@@ -129,7 +129,7 @@ function App() {
       {/* <HomeUi/> */}
       {/* <SearchFilter/> */}
       {/* <EditableList/> */}
-      <FileUpload/>
+      {/* <FileUpload/> */}
       <Accordion/>
     </>
   )
