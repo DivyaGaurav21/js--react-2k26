@@ -94,7 +94,8 @@
 
 
 import './App.css'
-import MultiStepForm from './components/question/MultiStepForm';
+import HomeUi from './components/question/modal/HomeUi';
+// import MultiStepForm from './components/question/MultiStepForm';
 // import Tabs from './components/question/tabs/Tabs';
 // import FullyControlledForm from './components/question/FullyControlledForm';
 // import TodoList from './components/question/TodoList';
@@ -120,7 +121,8 @@ function App() {
       {/* <TodoList/> */}
       {/* <FullyControlledForm/> */}
       {/* <Tabs/> */}
-      <MultiStepForm/>
+      {/* <MultiStepForm/> */}
+      <HomeUi/>
     </>
   )
 }
