@@ -1,39 +1,70 @@
-//make accordion simple first 
+//make accordion simple first
 
 import React, { useState } from "react";
 
 const data = [
-  { id: 1, title: "What is React?", content: "React is a JS library." },
-  { id: 2, title: "What is Tailwind?", content: "Tailwind is CSS framework." },
-  { id: 3, title: "What is useState?", content: "It manages state." },
+  {
+    id: 1,
+    title: "Introduction to React",
+    content:
+      "React is a popular JavaScript library used for building user interfaces.",
+  },
+  {
+    id: 2,
+    title: "Understanding Components",
+    content:
+      "Components are reusable pieces of UI that help structure a React application.",
+  },
+  {
+    id: 3,
+    title: "State and Props",
+    content:
+      "State manages dynamic data within components while props pass data between them.",
+  },
+  {
+    id: 4,
+    title: "Using Tailwind CSS",
+    content:
+      "Tailwind CSS is a utility-first CSS framework for quickly styling modern interfaces.",
+  },
+  {
+    id: 5,
+    title: "React Hooks",
+    content:
+      "Hooks like useState and useEffect allow functional components to use state and lifecycle features.",
+  },
 ];
 
 const Accordion = () => {
   const [activeId, setActiveId] = useState(null);
 
+  //for clicking same div again
+  const clickHandler = (Id) => {
+      setActiveId(activeId === Id ? "null" : Id);
+  }
+
+
   return (
-    <div className="w-80 mx-auto">
-      {data.map(item => (
-        <div key={item.id} className="border mb-2 p-2">
-
-          <div onClick={() =>
-            setActiveId(activeId === item.id ? null : item.id)
-          }>
-            {item.title}
-          </div>
-
-          {activeId === item.id && (
-            <p className="mt-2">{item.content}</p>
-          )}
-
-        </div>
-      ))}
+    <div className="w-full">
+      <ul className="flex flex-col gap-2">
+        {data.map((item) => (
+          <li key={item.id} className="border border-black">
+            <div
+             className="flex flex-row justify-between p-2 bg-gray-400"
+             onClick={() => clickHandler(item.id)}
+             >
+              <span>{item.title}</span>
+              <span>{item.id == activeId ?"▼" : "▲"} </span>
+            </div>
+            {item.id === activeId && <p className="p-2">{item.content}</p>}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
 
 export default Accordion;
-
 
 // ---------------------------------
 // import React, { useState } from "react";
@@ -99,4 +130,3 @@ export default Accordion;
 // };
 
 // export default Accordion;
-

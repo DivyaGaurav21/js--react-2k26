@@ -94,7 +94,11 @@
 
 
 import './App.css'
-import AutoCompleteSearch from './components/question/AutoCompleteSearch';
+import CountdownTimer from './components/question/CountdownTimer';
+// import DebaunceSearch from './components/question/DebaunceSearch';
+// import InfiniteScroll from './components/question/InfiniteScroll';
+// import ProgressBar from './components/question/ProgressBar';
+// import AutoCompleteSearch from './components/question/AutoCompleteSearch';
 // import Accordion from './components/question/Accordion';
 // import FileUpload from './components/question/FileUpload';
 // import EditableList from './components/question/EditableList';
@@ -132,7 +136,12 @@ function App() {
       {/* <EditableList/> */}
       {/* <FileUpload/> */}
       {/* <Accordion/> */}
-      <AutoCompleteSearch/>
+      {/* <AutoCompleteSearch/> */}
+      {/* <ProgressBar/> */}
+      {/* <Accordion/> */}
+      {/* <InfiniteScroll/> */}
+      {/* <DebaunceSearch/> */}
+      <CountdownTimer/>
     </>
   )
 }
