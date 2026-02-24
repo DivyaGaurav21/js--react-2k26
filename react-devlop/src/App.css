@@ -13,3 +13,52 @@ section {
   padding: 2rem;
   border-radius: 0.5rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* CSS for akshay saini module  */
+
+.tabs{
+  display: flex;
+  gap:2px
+}
+
+.bttn{
+  background-color: black;
+  border:1px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+.active-btn{
+  background: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.active-tab{
+  border: 1px solid black;
+  height: 500px;
+  margin: 5px;
+}
+.inp{
+  border: 1px solid black;
+  padding: 2px;
+  margin: 5px;
+}
+h4{
+  font-weight: 700;
+  font-size: 24px;
+}

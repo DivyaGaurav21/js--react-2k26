@@ -94,7 +94,8 @@
 
 
 import './App.css'
-import CountdownTimer from './components/question/CountdownTimer';
+import TabForm from './components/akshay-saini/tab-form/TabForm';
+// import CountdownTimer from './components/question/CountdownTimer';
 // import DebaunceSearch from './components/question/DebaunceSearch';
 // import InfiniteScroll from './components/question/InfiniteScroll';
 // import ProgressBar from './components/question/ProgressBar';
@@ -141,7 +142,8 @@ function App() {
       {/* <Accordion/> */}
       {/* <InfiniteScroll/> */}
       {/* <DebaunceSearch/> */}
-      <CountdownTimer/>
+      {/* <CountdownTimer/> */}
+      <TabForm/>
     </>
   )
 }

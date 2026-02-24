@@ -52,7 +52,7 @@ textarea{
 }
 
 select{
-  width: 100%;
+
   padding: 8px;
   font-size: 15px;
   border-radius: 10px;
@@ -77,7 +77,7 @@ p{
     display: none;
   }
 
-
-
-
-
+span{
+  font-size: 10px;
+  color: red;
+}
