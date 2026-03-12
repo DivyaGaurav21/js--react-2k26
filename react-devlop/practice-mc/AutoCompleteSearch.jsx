@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-
 let API_URL = "https://dummyjson.com/recipes";
 
 const AutoCompleteSearch = () => {
   const [results, setResults] = useState([]);
   const [input, setInput] = useState("");
-  const [show, setShow] = useState(false);
   const [cache, setCache] = useState({});
 
   const fetchData = async (query) => {
@@ -26,14 +24,13 @@ const AutoCompleteSearch = () => {
       if (input) {
         fetchData(input);
       }
-    }, 300);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [input]);
 
   const handleSelect = (name) => {
     setInput(name);
-    setShow(false);
   };
   return (
     <section className="container">
@@ -43,10 +40,9 @@ const AutoCompleteSearch = () => {
         placeholder="Search..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        onFocus={() => setShow(true)}
       />
 
-      {show && results.length > 0 && (
+      {results.length > 0 && (
         <ul className="result-box">
           {results.map((item) => (
             <li
