@@ -64,30 +64,26 @@ const AutoCompleteSearch = () => {
 };
 
 export default AutoCompleteSearch;
-
-// .container {
-//   width: 300px;
-// }
-
-// .search-input {
-//   width: 100%;
-//   padding: 6px;
-//   border: 1px solid #ccc;
-// }
-
-// .result-box {
-//   max-height: 200px;
-//   overflow-y: auto;
-//   border: 1px solid #ccc;
-//   padding: 5px;
-// }
-
-// .result-item {
-//   padding: 4px;
-//   cursor: pointer;
-// }
-
-// .result-item:hover {
-//   background: black;
-//   color: white;
-// }
+// -------------------------
+.container {
+  width: 300px;
+}
+.search-input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+.result-box {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.result-item {
+  padding: 4px;
+  cursor: pointer;
+}
+.result-item:hover {
+  background: black;
+  color: white;
+}

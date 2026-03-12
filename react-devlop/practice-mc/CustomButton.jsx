@@ -21,34 +21,30 @@ const CustomButton = ({
 };
 
 export default CustomButton;
+// ---------------------
 
-// .btn {
-//   border: none;
-//   cursor: pointer;
-//   border-radius: 6px;
-// }
-
-// .primary {
-//   background: blue;
-//   color: white;
-// }
-
-// .secondary {
-//   background: red;
-//   color: white;
-// }
-
-// .small {
-//   padding: 6px 10px;
-//   font-size: 14px;
-// }
-
-// .large {
-//   padding: 10px 16px;
-//   font-size: 18px;
-// }
-
-// .btn:disabled {
-//   opacity: 0.6;
-//   cursor: not-allowed;
-// }
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.primary {
+  background: blue;
+  color: white;
+}
+.secondary {
+  background: red;
+  color: white;
+}
+.small {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+.large {
+  padding: 10px 16px;
+  font-size: 18px;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

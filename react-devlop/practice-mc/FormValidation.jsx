@@ -1,3 +1,4 @@
+// email regex :- !/^\S+@\S+\.\S+$/.test(formData.email)
 import React, { useEffect, useState } from "react";
 
 const FormValidation = () => {
@@ -117,25 +118,26 @@ const FormValidation = () => {
 };
 
 export default FormValidation;
-// .container {
-//   width: 300px;
-//   border: 1px solid #ccc;
-//   padding: 5px;
-// }
-// .form {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 8px;
-// }
-// .input {
-//   padding: 6px;
-//   border: 1px solid #ccc;
-// }
-// .error {
-//   color: red;
-//   font-size: 10px;
-// }
-// .btn {
-//   padding: 6px;
-//   cursor: pointer;
-// }
+// -------------------------
+.container {
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input {
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+.error {
+  color: red;
+  font-size: 10px;
+}
+.btn {
+  padding: 6px;
+  cursor: pointer;
+}

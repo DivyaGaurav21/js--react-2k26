@@ -201,36 +201,31 @@ const FullyControlledFormValidation = () => {
 };
 
 export default FullyControlledFormValidation;
-
-// .container {
-//   max-width: 500px;
-// }
-
-// .form {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 8px;
-// }
-
-// .input {
-//   padding: 6px;
-//   border: 1px solid #ccc;
-// }
-
-// .row {
-//   display: flex;
-//   gap: 10px;
-//   align-items: center;
-// }
-
-// .error {
-//   color: red;
-//   font-size: 12px;
-// }
-
-// .btn {
-//   padding: 6px;
-//   cursor: pointer;
-//   background-color: black;
-//   color: white;
-// }
+// -----------------
+.container {
+  max-width: 500px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input {
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+.btn {
+  padding: 6px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

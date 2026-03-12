@@ -2,15 +2,13 @@
 import React, { useState } from "react";
 
 const formInitialState = {
-  firstName: "",
-  lastName: "",
+  name: "",
   dob: "",
   gender: "",
   mobile: "",
   email: "",
   address: "",
   loanType: "",
-  annualIncome: "",
   loanAmount: "",
 };
 
@@ -35,45 +33,20 @@ const MultiStepForm = () => {
     setStep(1);
   };
 
-  const nextStepFirst = () => {
-    if (
-      !formData.firstName ||
-      !formData.lastName ||
-      !formData.dob ||
-      !formData.gender
-    ) {
-      alert("Please fill all fields");
-      return;
-    }
-
-    setStep((prev) => prev + 1);
-  };
-
   return (
     <section className="container">
       <form className="form" onSubmit={formSubmitHandler}>
         {step === 1 && (
           <>
             <p>Personal Detail Form</p>
-
             <input
-              name="firstName"
+              name="name"
               type="text"
-              value={formData.firstName}
+              value={formData.name}
               onChange={onFieldChange}
-              placeholder="Enter First Name"
+              placeholder="Enter Name"
               className="input"
             />
-
-            <input
-              name="lastName"
-              type="text"
-              value={formData.lastName}
-              onChange={onFieldChange}
-              placeholder="Enter Last Name"
-              className="input"
-            />
-
             <input
               name="dob"
               type="date"
@@ -93,17 +66,12 @@ const MultiStepForm = () => {
               <option value="female">Female</option>
               <option value="other">Other</option>
             </select>
-
-            <button className="btn" type="button" onClick={nextStepFirst}>
-              Next
-            </button>
           </>
         )}
 
         {step === 2 && (
           <>
             <p>Contact Detail Form</p>
-
             <input
               name="mobile"
               type="text"
@@ -112,7 +80,6 @@ const MultiStepForm = () => {
               placeholder="Enter Mobile Number"
               className="input"
             />
-
             <input
               name="email"
               type="text"
@@ -121,7 +88,6 @@ const MultiStepForm = () => {
               placeholder="Enter Email"
               className="input"
             />
-
             <textarea
               name="address"
               value={formData.address}
@@ -129,31 +95,11 @@ const MultiStepForm = () => {
               placeholder="Enter Address"
               className="input"
             />
-
-            <div className="row">
-              <button
-                className="btn"
-                type="button"
-                onClick={() => setStep((prev) => prev - 1)}
-              >
-                Prev
-              </button>
-
-              <button
-                className="btn"
-                type="button"
-                onClick={() => setStep((prev) => prev + 1)}
-              >
-                Next
-              </button>
-            </div>
           </>
         )}
-
         {step === 3 && (
           <>
             <p>Loan Apply Form</p>
-
             <select
               name="loanType"
               value={formData.loanType}
@@ -167,15 +113,6 @@ const MultiStepForm = () => {
             </select>
 
             <input
-              name="annualIncome"
-              type="number"
-              value={formData.annualIncome}
-              onChange={onFieldChange}
-              placeholder="Your Annual Income"
-              className="input"
-            />
-
-            <input
               name="loanAmount"
               type="number"
               value={formData.loanAmount}
@@ -183,22 +120,34 @@ const MultiStepForm = () => {
               placeholder="Enter Loan Amount"
               className="input"
             />
-
-            <div className="row">
-              <button
-                className="btn"
-                type="button"
-                onClick={() => setStep((prev) => prev - 1)}
-              >
-                Prev
-              </button>
-
-              <button className="btn" type="submit">
-                Apply Loan
-              </button>
-            </div>
           </>
         )}
+
+        <div className="row">
+          {step > 1 && (
+            <button
+              type="button"
+              className="btn"
+              onClick={() => setStep((prev) => prev - 1)}
+            >
+              Prev
+            </button>
+          )}
+          {step < 3 && (
+            <button
+              type="button"
+              className="btn"
+              onClick={() => setStep((prev) => prev + 1)}
+            >
+              Next
+            </button>
+          )}
+          {step === 3 && (
+            <button type="submit" className="btn">
+              Apply Loan
+            </button>
+          )}
+        </div>
       </form>
     </section>
   );
@@ -206,28 +155,28 @@ const MultiStepForm = () => {
 
 export default MultiStepForm;
 
+// ----------------------------------
+.container {
+  max-width: 400px;
+}
 
-// .container {
-//   max-width: 400px;
-// }
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-// .form {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 8px;
-// }
+.input {
+  padding: 6px;
+  border: 1px solid #ccc;
+}
 
-// .input {
-//   padding: 6px;
-//   border: 1px solid #ccc;
-// }
+.row {
+  display: flex;
+  gap: 8px;
+}
 
-// .row {
-//   display: flex;
-//   gap: 8px;
-// }
-
-// .btn {
-//   padding: 6px;
-//   cursor: pointer;
-// }
+.btn {
+  padding: 6px;
+  cursor: pointer;
+}

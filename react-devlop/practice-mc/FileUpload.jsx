@@ -48,23 +48,23 @@ const FileUpload = () => {
 };
 
 export default FileUpload;
-
-// .file-input {
-//   border: 1px solid #ccc;
-//   padding: 6px;
-//   cursor: pointer;
-// }
-// .error {
-//   color: red;
-//   margin-top: 5px;
-// }
-// .preview-img {
-//   max-width: 200px;
-//   display: block;
-//   margin-top: 5px;
-// }
-// .remove-btn {
-//   margin-top: 5px;
-//   padding: 4px 8px;
-//   cursor: pointer;
-// }
+// ----------------------------
+.file-input {
+  border: 1px solid #ccc;
+  padding: 6px;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  margin-top: 5px;
+}
+.preview-img {
+  max-width: 200px;
+  display: block;
+  margin-top: 5px;
+}
+.remove-btn {
+  margin-top: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+}

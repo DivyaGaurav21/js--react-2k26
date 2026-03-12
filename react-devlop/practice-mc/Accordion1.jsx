@@ -1,3 +1,4 @@
+// for icon -> windows + .
 import React, { useState } from "react";
 
 const data = [
@@ -45,18 +46,18 @@ const Accordion1 = () => {
 };
 
 export default Accordion1;
-
-// .container {
-//   max-width: 400px;
-// }
-// .accordion-item {
-//   border: 1px solid black;
-//   padding: 5px;
-//   margin-bottom: 5px;
-//   cursor: pointer;
-// }
-// .accordion-header {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
+// -----------------------
+.container {
+  max-width: 400px;
+}
+.accordion-item {
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
