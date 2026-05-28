@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
 function DarkLigthToggle() {
-  const [theme, setTheme] = useState("light");
+   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
-    document.body.className = theme;
+    document.body.classList.add(theme);
+    localStorage.setItem("theme", theme);
+    return () => document.body.classList.remove(theme);
   }, [theme]);
 
   return (
